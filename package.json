@@ -1,0 +1,26 @@
+{
+  "name": "redux-react-starterpack",
+  "version": "0.0.1",
+  "description": "A starter for redux react project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codefloat/redux-react-starterpack.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "starterpack",
+    "boilerplate",
+    "flux"
+  ],
+  "author": "Codefloat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codefloat/redux-react-starterpack/issues"
+  },
+  "homepage": "https://github.com/codefloat/redux-react-starterpack"
+}
