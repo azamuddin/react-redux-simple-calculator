@@ -1,3 +1,2 @@
 # redux-react-starterpack
-A starter for redux react starterpack
-ok
+A starter for redux react with es2015, webpack
