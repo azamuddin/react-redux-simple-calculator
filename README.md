@@ -8,6 +8,8 @@ https://github.com/rackt/redux-simple-router
 + **material UI**
 http://www.material-ui.com/
 
+![Preview Calculator](http://frontendfuture.com/wp-content/uploads/2015/12/simple-calculator.gif)
+
 
 ## Cara nyoba jalanin aplikasinya
 1. **buka terminal / command prompt** (pastikan km sudah install git)
