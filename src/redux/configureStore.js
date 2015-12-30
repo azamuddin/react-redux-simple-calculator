@@ -4,6 +4,8 @@ import thunk from 'redux-thunk'
 
 import rootReducer from './rootReducer'
 
-let store = compose(applyMiddleware(thunk))(createStore)(rootReducer)
 
-export default store
+export default function configureStore(initialState){
+    let store = compose(applyMiddleware(thunk))(createStore)(rootReducer, initialState)
+    return store
+}

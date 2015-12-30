@@ -1,47 +1,36 @@
 import React, {Component} from 'react'
-import {render} from 'react-dom'
-import _ from 'lodash'
-import {connect} from 'react-redux'
-import {increment, decrement} from '../redux/actions/counter'
-
-import FlatButton from 'material-ui/lib/flat-button';
-import RaisedButton from 'material-ui/lib/raised-button';
-import FloatingActionButton from 'material-ui/lib/floating-action-button';
-
+import { Provider } from 'react-redux'
+import { Router } from 'react-router'
 
 class Root extends Component{
-    constructor(props){
-        super(props)
+
+    get content(){
+        return (
+            <Router history={this.props.history}>
+                {this.props.routes}
+            </Router>
+        )
     }
-   
-    componentDidMount(){}
-    
+
     render(){
-        let {dispatch, number} = this.props
-        return <div>
-                {number}
-                <RaisedButton onClick={() => dispatch(increment(1))} label="increment" primary={true}/>
-                <RaisedButton onClick={() => dispatch(decrement(1))} label="decrement" secondary={true} />
+        console.warn(this.props)
+        return (
+            <div>
+                <Provider store={this.props.store}>
+                    <div>
+                        {this.content}
+                    </div>
+                </Provider>
             </div>
+        )
     }
 }
+
 
 Root.propTypes = {
-
+    history: React.PropTypes.object.isRequired,
+    routes: React.PropTypes.element.isRequired,
+    store: React.PropTypes.object.isRequired
 }
 
-Root.defaultProps = {
-
-}
-
-Root.state = {
-
-}
-
-function mapStateToProps(state){
-    return {
-        number: state.counter
-    }
-}
-
-export default connect(mapStateToProps)(Root)
+export default Root
