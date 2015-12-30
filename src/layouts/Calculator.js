@@ -1,9 +1,11 @@
 import React from 'react'
+import Paper from 'material-ui/lib/paper'
+
 
 export default function CalculatorLayout({children}){
-    return (<div>
-        Calculator Layout
-        <hr/>
-        {children}
-    </div>)
+    return <div className="container">
+        <Paper className="calculator-wrapper">
+            {children}
+        </Paper>
+    </div>
 }

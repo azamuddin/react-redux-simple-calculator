@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
-import counter from './reducers/counter'
+import screenValue from './reducers/screenValue'
 import {routeReducer as routing} from 'redux-simple-router'
 
-let rootReducer = combineReducers({counter, routing: routing})
+let rootReducer = combineReducers({screenValue, routing: routing})
 
 export default rootReducer

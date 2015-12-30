@@ -1,0 +1,21 @@
+
+.container{
+    max-width:500px;
+    margin: 0 auto;
+}
+.calculator-wrapper{
+    padding: 0px;
+}
+
+.content{
+    padding: 10px
+}
+
+table.button-group td{
+    padding: 5px
+}
+
+hr{
+    border:0px;
+    border-top: 1px solid #ddd
+}

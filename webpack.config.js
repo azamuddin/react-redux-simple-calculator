@@ -1,7 +1,7 @@
 module.exports = {
 
     entry: [
-//        'webpack-dev-server/client?http://localhost:8000',
+//        'webpack-dev-server/client?http://localhost:8000', // hilangkan komen untuk hot reload
 //        'webpack/hot/only-dev-server',
         './src/main.js'
     ],
